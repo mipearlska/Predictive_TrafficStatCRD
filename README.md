@@ -30,7 +30,7 @@ sudo docker run -d --net=host containersol/locust_exporter
 ```
 - When deploying Prometheus, add Locust config in values.yaml of Prometheus:
 job_name = Locust's job parameter in Prometheus query below
-target = "Host_URL_that_run_Locust:9696"
+target = "Host_URL_that_run_Locust:9646"
 ```
 prometheus:
   prometheusSpec:
