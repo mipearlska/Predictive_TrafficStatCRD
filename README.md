@@ -20,11 +20,11 @@ pip install -U pip
 ```
 pip install -r requirements.txt
 ```
-- Locust Traffic Generator (https://locust.io/)
+- Locust Traffic Generator (https://locust.io/). Recommended install version 2.8.6.
 ```
-pip3 install locust
+pip3 install locust==2.8.6
 ```
-- Locust exporter for Prometheus
+- Locust exporter for Prometheus. Locust exporter cannot fetch 95%,50% latency for some recent versions of Locust (> 3). 
 ```
 sudo docker run -d --net=host containersol/locust_exporter
 ```
